@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="xy" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.70.68;Initial Catalog=xy;Persist Security Info=True;User ID=cprs2010" SettingsObjectName="EPO_Get.Properties.Settings" SettingsPropertyName="xyConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.GetEPO" Member="GetEPO">
+    <Type Name="GetEPO">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PubId" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PubId2" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EPO_ACD" Member="EPO_ACD">
+    <Type Name="EPO_ACD">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PubId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="abs" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Cls" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Des" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PubID2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
